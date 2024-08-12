@@ -3,3 +3,4 @@
 - database Connected
 - middleware
 - Ef Database First
+- Scaffold-DbContext "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=UserDatabase;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" Microsoft.EntityFrameworkCore.SqlServer -Context ApplicationDbContext -Verbose -Force
