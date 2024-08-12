@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Logged In";
+    var userId = ViewBag.UserID as string;
+    var userName = ViewBag.UserName as string;
+}
+
+<h2>Logged In</h2>
+
+<p>Welcome, @userName!</p>
+
+@if (ViewBag.JwtToken != null)
+{
+    <p>Your JWT Token:</p>
+    <textarea rows="10" cols="50" readonly>@ViewBag.JwtToken</textarea>
+}
+else
+{
+    <p>No JWT token available.</p>
+}
+<a asp-controller="User" asp-action="Create" class="btn btn-primary">Create</a>
+<a asp-action="Logout" asp-controller="User" class="btn btn-danger">Logout</a>
