@@ -37,7 +37,7 @@ namespace JwtToken.Controllers
 
             if (appUserInfo == null)
             {
-                ViewBag.ErrorMessage = "User not found or invalid credentials. Please try again.";
+                ViewBag.ErrorMessage = "User not found. Please try again.";
                 return View();
             }
 
